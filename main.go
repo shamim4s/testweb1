@@ -11,9 +11,9 @@ func main() {
     port := os.Getenv("envport")
 	if port == "" {
 		port = "8888"
-	log.Printf("Docker web running on port %s", port)
+	log.Printf("WebServer running on port %s", port)
 	} else {
-	log.Printf("Docker web running on port %s", port)
+	log.Printf("WebServer running on port %s", port)
 	}
 
 	http.HandleFunc("/", index)
